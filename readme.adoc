@@ -1,6 +1,7 @@
-= jsonnet environment
+= jsonnet demo
 
-Environment:
+
+== Environment:
 
 * https://github.com/google/jsonnet[jsonnet]
 * https://github.com/jsonnet-libs[jsonnet-libs]
@@ -9,7 +10,10 @@ Environment:
 * https://github.com/grafana/vscode-jsonnet[vs jsonnet extension]
 
 
+== How to run
+
 [source,bash]
 ----
+# the generated yaml files are in the yaml folder
 make
 ----

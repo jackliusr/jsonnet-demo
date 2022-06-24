@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 all: clean
-	tk export vs environments/default
+	tk export yaml environments/default
 
 clean:
-	rm -rf ./vs
+	rm -rf ./yaml
