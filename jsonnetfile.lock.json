@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "dependencies": [
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/grafana/jsonnet-libs.git",
+          "subdir": "ksonnet-util"
+        }
+      },
+      "version": "63274170cdeca59bc33d0f4be61efc6bd5bbb669",
+      "sum": "QiIOYQ0mdyVXStdPxu99M5CYGtYAXczWAC62EAQmWBM="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/cert-manager-libsonnet.git",
+          "subdir": "1.8"
+        }
+      },
+      "version": "d4270a3802a54431a17f30ec0625ec3349f0de83",
+      "sum": "SQts4eGBBPyxMYF5z3QaqX7gD0jyB4NBELgO/zCWfO8="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/istio-libsonnet.git",
+          "subdir": "1.13"
+        }
+      },
+      "version": "5db4ffb9873901ce85cce14971794bac8a7ea90b",
+      "sum": "A5p+uy/9cjl6ENBFJowcWIUQWWSooImDVgW+PcrtOME="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/k8s-libsonnet.git",
+          "subdir": "1.20"
+        }
+      },
+      "version": "12ea89d1fa76e716565b2885492da3163e62dd90",
+      "sum": "Pp9RCh4EkWpmQ5GsgtgJvqFqpBPHoZufMaQ6ejY4EeE="
+    }
+  ],
+  "legacyImports": false
+}

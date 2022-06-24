@@ -1,0 +1,15 @@
+= jsonnet environment
+
+Environment:
+
+* https://github.com/google/jsonnet[jsonnet]
+* https://github.com/jsonnet-libs[jsonnet-libs]
+* https://github.com/grafana/tanka[tanka ]
+* https://github.com/jsonnet-bundler/jsonnet-bundler[jsonnet-bundler]
+* https://github.com/grafana/vscode-jsonnet[vs jsonnet extension]
+
+
+[source,bash]
+----
+make
+----
