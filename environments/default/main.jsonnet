@@ -34,38 +34,17 @@ local vs = istio.networking.v1beta1.virtualService;
         + {
             spec:
                {
-                selector: {
-                    istio: "ingressgateway",
-                },
+                selector: { istio: "ingressgateway", },
                 servers: [
                 {
-                    port: {
-                        number: 80,
-                        name: "http",
-                        protocol: "HTTP",
-                    },
-                    hosts: [
-                        domainName,
-                        "www." + domainName,
-                    ],
-                    tls : {
-                        httpsRedirect: true,
-                    }
+                    port: { number: 80, name: "http", protocol: "HTTP", },
+                    hosts: [ domainName, "www." + domainName, ],
+                    tls : { httpsRedirect: true, }
                 },
                 {
-                    port: {
-                        number: 443,
-                        name: "https",
-                        protocol: "HTTPS",
-                    },
-                    hosts: [
-                        domainName,
-                        "www." + domainName,
-                    ],
-                    tls : {
-                        mode: "SIMPLE",
-                        credentialName: "cert-" +std.strReplace(domainName,".","-"),
-                    }
+                    port: { number: 443, name: "https", protocol: "HTTPS", },
+                    hosts: [ domainName, "www." + domainName, ],
+                    tls : { mode: "SIMPLE", credentialName: "cert-" +std.strReplace(domainName,".","-"), }
                 },                
                 ] ,
                },
