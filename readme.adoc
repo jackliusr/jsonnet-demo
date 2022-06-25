@@ -22,3 +22,7 @@ jb install
 # the generated yaml files are in the yaml folder
 make
 ----
+
+== What's next
+
+Integrate tanka into argo-cd. Here is a https://hodovi.cc/blog/gitops-argocd-and-tanka/[reference ]
