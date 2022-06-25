@@ -57,24 +57,17 @@ local vs = istio.networking.v1beta1.virtualService;
      + ["www." + host for host in $._config.hosts]) 
      + vs.spec.withGateways(["gw-" + std.strReplace(host,".","-") for host in $._config.hosts])
      + {
-        "spec": {
-            "http": [
+        spec: {
+            http: [
             {
-                "match": [
+                match: [
                 {
-                    "uri": {
-                    "prefix": "/",
-                    },
+                    uri: { prefix: "/", },
                 },
                 ],
-                "route": [
+                route: [
                 {
-                    "destination": {
-                    "port": {
-                        "number": 80,
-                    },
-                    "host": "landingpage",
-                    },
+                    destination: { port: { number: 80, }, host: "landingpage", },
                 },
                 ],
             },

@@ -9,7 +9,12 @@
 * https://github.com/jsonnet-bundler/jsonnet-bundler[jsonnet-bundler]
 * https://github.com/grafana/vscode-jsonnet[vs jsonnet extension]
 
+== Install dependencies
 
+[source, bash]
+----
+jb install
+----
 == How to run
 
 [source,bash]
