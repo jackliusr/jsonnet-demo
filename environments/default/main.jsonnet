@@ -8,6 +8,8 @@ local servers = gateway.spec.servers;
 local port = gateway.spec.servers.port;
 local tls = gateway.spec.servers.tls;
 local vs = istio.networking.v1beta1.virtualService;
+
+
 //local cert_manager = import "github.com/jsonnet-libs/cert-manager-libsonnet/1.8/main.libsonnet"
 {
   _config:: {
@@ -30,6 +32,7 @@ local vs = istio.networking.v1beta1.virtualService;
         + certificate.spec.issuerRef.withKind("ClusterIssuer")
         + certificate.spec.issuerRef.withName("letsencrypt-prod")
         + certificate.spec.withSecretName("cert-" + std.strReplace(domainName,".","-")),
+        
   local fnGw(domainName) = gateway.new("gw-"+ std.strReplace(domainName,".","-") )
         + {
             spec:

@@ -14,12 +14,32 @@
     {
       "source": {
         "git": {
+          "remote": "https://github.com/grafana/jsonnet-libs.git",
+          "subdir": "tanka-util"
+        }
+      },
+      "version": "3517c7c0889d0cb29d89b5e67e03f11d30bc99d3",
+      "sum": "AGgjH6IJe/1qwNtxFIiG8V1uyOJZascEydQsNrfPQ4c="
+    },
+    {
+      "source": {
+        "git": {
           "remote": "https://github.com/jsonnet-libs/cert-manager-libsonnet.git",
           "subdir": "1.8"
         }
       },
       "version": "d4270a3802a54431a17f30ec0625ec3349f0de83",
       "sum": "SQts4eGBBPyxMYF5z3QaqX7gD0jyB4NBELgO/zCWfO8="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/jsonnet-libs/docsonnet.git",
+          "subdir": "doc-util"
+        }
+      },
+      "version": "fedfb4920fae931a27190df0aeec5ef858daf3b5",
+      "sum": "fzESn29CRKzLap9jTpcUNSNBy7MzvzOxZo1LYWyIrGs="
     },
     {
       "source": {
